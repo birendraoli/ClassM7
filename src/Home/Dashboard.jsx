@@ -2,17 +2,16 @@ import React from 'react'
 import First from './First/First'
 import Second from './Second/Second'
 
-const Dashboard = ({mode}) => {
+const Dashboard = () => {
   return (
     <>
-     <div className={` ${mode ? '' : "dark"}`}>
     <section>
         <First />
       </section>
       <section>
         <Second />
       </section>
-    </div>
+
     </>
   )
 }

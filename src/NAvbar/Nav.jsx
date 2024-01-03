@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.scss'
 import { Link } from 'react-router-dom'
-const Nav = ({mode,set}) => {
+const Nav = ({set}) => {
     const link = [
         {
             name:"About us",
@@ -28,17 +28,16 @@ const Nav = ({mode,set}) => {
     const handlemode =()=>{
         set(prev => !prev)
     }
-    console.log(mode)
   return (
     <>
-      <div className={`nav_werapper ${mode ? "" : "dark"}`} >
+      <div className={`nav_werapper`} >
         <div className="logo">
             <Link to="">Sipalaya</Link>
         </div>
         <div className="right_wrapper">
             <div className="link">
-                {link.map(({name,link})=>(
-                    <Link className='links' to={link}>{name}</Link>
+                {link.map(({name,link},index)=>(
+                    <Link key={index} className='links' to={link}>{name}</Link>
                 ))}
             </div>
             <div className="buttons">
