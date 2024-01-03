@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+import {motion} from "framer-motion"
 import { Link } from 'react-router-dom'
 const Nav = ({set}) => {
     const link = [
@@ -30,7 +31,7 @@ const Nav = ({set}) => {
     }
   return (
     <>
-      <div className={`nav_werapper`} >
+      <motion.div initial={{y: 100 ,opacity: 0}} animate={{y:0, opacity:1}} transition={{duration:.2,type:"spring",stiffness:200 }} className={`nav_werapper`} >
         <div className="logo">
             <Link to="">Sipalaya</Link>
         </div>
@@ -45,7 +46,7 @@ const Nav = ({set}) => {
                 <button>Login</button>
             </div>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }
