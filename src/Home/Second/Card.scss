@@ -1,0 +1,106 @@
+.bodd{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  padding: 0 0 50px 0;
+  background-color: #151417;
+  gap: 50PX;
+}
+.bodd #span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 50px 50px 50px;
+    flex-wrap: wrap;
+    background-color: #151417;
+    gap: 50PX;
+    // flex-direction: column;
+}
+.card {
+    height: 500px;
+    width: 380px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.21);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    /* filter: blur(5px); */
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    padding: 200px 20px 0px 20px;
+    font-family: sans-serif;
+  }
+  .glo{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background: red;
+    /* box-shadow: 0 0px 30px rgba(255, 0, 0, 49%),0 0px 90px rgba(255, 0, 0, 49%); */
+    position: absolute;
+    z-index: -1;
+    left: 30%;
+    top: 65%;
+  
+  }
+  .glo::after{
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background: rgb(255, 64, 0);
+    /* box-shadow: 0 0px 30px rgba(255, 0, 0, 49%),0 0px 90px rgba(255, 0, 0, 49%); */
+    position: absolute;
+    z-index: -1;
+    left: 200%;
+    top: -400px;
+  }
+  .card .img_box {
+    width: 80%;
+    position: absolute;
+    border-radius: 16px;
+    display: flex;
+    top: -10px;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    box-shadow: 1px 1px 20px #250d25;
+  }
+  .card .img_box img {
+    width: 100%;
+    border-radius: 16px;
+    height: 100%;
+    object-fit: cover;
+    /* filter: drop-shadow(1px 1px 20px #000001d1); */
+  }
+  .textarea {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+  }
+  button {
+    border: none;
+    outline: none;
+    padding: 13px 15px;
+    /* width: 50%; */
+    border-radius: 8px;
+    color: #fff;
+    background: #250d25;
+    box-shadow: 1px 1px 40px #250d25;
+    transition: .5s ease;
+  }
+  .textarea button:hover {
+    scale: 1.2;
+  }
+  
+  

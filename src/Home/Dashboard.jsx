@@ -8,9 +8,7 @@ const Dashboard = () => {
     <section>
         <First />
       </section>
-      <section>
         <Second />
-      </section>
 
     </>
   )
