@@ -1,8 +1,9 @@
-a{
-    color: var( --main-color);
+a {
+    color: var(--main-color);
     text-decoration: none;
 }
-.nav_werapper{
+
+.nav_werapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,28 +12,56 @@ a{
     background: transparent;
     position: absolute;
     top: 0;
-    color: var( --main-color);
+    color: var(--main-color);
     width: 100%;
     font-family: sans-serif;
     border-bottom: 1px solid #d3d3d369;
 
 
-    .right_wrapper{
+    .right_wrapper {
         display: flex;
-        gap: 30px;        
-        .link{
+        gap: 30px;
+
+        .link {
+            position: relative;
             display: flex;
             align-items: center;
             gap: 30px;
-        
+
+            span{
+                position: relative;
+                cursor: pointer;
+                .drop-content{
+                    margin-top: 20px;
+                    position: absolute;
+                    padding: 20px 30px;
+                    border-radius: 9px;
+                    background: rgba(255, 255, 255, 0.2);
+                    border-radius: 16px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(5px);
+                    -webkit-backdrop-filter: blur(5px);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 20px;
+    
+                    a {
+                        color: var(--main-color);
+                    }
+                }
+            }
         }
-        .buttons{
+
+        .buttons {
             display: flex;
             gap: 20px;
-            #dff{
+
+            #dff {
                 background: transparent;
             }
-            button{
+
+            button {
                 cursor: pointer;
                 color: #fff;
                 font-size: 14px;

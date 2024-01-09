@@ -7,6 +7,8 @@ import { BrowserRouter as Rou, Routes, Route } from "react-router-dom";
 import About from './About/About';
 function App() {
   const [mode,setMode] = useState(false)
+
+
   return (
     <>
     <div className={` ${mode ? '' : "dark"}`}>

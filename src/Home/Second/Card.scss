@@ -6,16 +6,17 @@
   flex-direction: column;
   // flex-wrap: wrap;
   padding: 0 0 50px 0;
-  background-color: #151417;
+  background-color: var(--bg-color);
   gap: 50PX;
 }
 .bodd #span{
+  background-color: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 150px 50px 50px 50px;
     flex-wrap: wrap;
-    background-color: #151417;
+    // background-color: #151417;
     gap: 50PX;
     // flex-direction: column;
 }
@@ -27,7 +28,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #fff;
+    color: var(--main-color);
     background: rgba(255, 255, 255, 0.21);
     /* border-radius: 16px; */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

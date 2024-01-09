@@ -1,6 +1,7 @@
 import React from 'react'
 import First from './First/First'
 import Second from './Second/Second'
+import FS from './FS/FS'
 
 const Dashboard = () => {
   return (
@@ -8,6 +9,7 @@ const Dashboard = () => {
     <section>
         <First />
       </section>
+      <FS/>
         <Second />
 
     </>

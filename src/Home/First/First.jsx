@@ -8,7 +8,7 @@ const First = () => {
     target: ref,
     offset: ["start start", "end start"],
   });
-
+// console.log(ref.curre)
   const ytext = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
   return (
