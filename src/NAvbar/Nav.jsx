@@ -41,7 +41,7 @@ const Nav = ({ set }) => {
     },
   ];
 
-  const [click, setClick] = useState(true);
+  const [click, setClick] = useState(false);
 
   return (
     <>

@@ -5,7 +5,7 @@ const Second = () => {
   const [page, setPage] = useState(1)
   
   
-  const api = `https://newsapi.org/v2/everything?q=tesla&from=2023-12-09&sortBy=publishedAt&apiKey=138adc448d5a431e9ccc5eddcd51c15f&page=${page}`;
+  const api = `https://newsapi.org/v2/everything?q=tesla&from=2023-12-10&sortBy=publishedAt&apiKey=138adc448d5a431e9ccc5eddcd51c15f&page=${page}`;
 
   const [Data, setData] = useState([])
   const [error, setError] = useState("")
@@ -27,7 +27,7 @@ const Second = () => {
   const filteritems = Data.filter(Data =>{Data.title &&  Data.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase())!== -1});
 
   function FilterData(Data,query){
-    let filtered = Data;
+    let filtered = Data.slice(0, 10);
 
     if(query){
       filtered = filteritems;

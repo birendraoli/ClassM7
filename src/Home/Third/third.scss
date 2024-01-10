@@ -1,0 +1,94 @@
+::-webkit-scrollbar {
+    opacity: 0;
+  }
+    .Course_OverView{
+        font-family: sans-serif;
+
+        color: var(--main-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 250px;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+
+        @media (max-width: 1000px) {
+            // height: unset;
+            width: 100%;
+            
+        }
+        
+        h1{
+            font-size: 40px;
+        }
+        .Course_Image{
+            width: 100%;
+            height: 70%;
+            img{
+                border-radius: 20px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .course_link{
+            display: flex;
+            gap: 20px;
+            a{
+                font-size: 19px;
+                color: var(--main-color);
+            }
+        }
+        .fix_width{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            span{
+                div{
+                    display: flex;
+                    // flex-direction: column;
+                    gap: 100px;
+                    p{
+                        font-size: 20px;
+                        line-height: 150%;
+                    }
+                }
+            }
+
+        }
+        .Cont_Topic{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 14px;
+            padding: 10px 20px;
+            border: 1px solid #3d3d3d;
+            .Topic_Title{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h1{
+                    font-size: 15px;
+                }
+            }
+            .Title_content{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span{
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h1{
+                        padding: 10px;
+                        font-size: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
